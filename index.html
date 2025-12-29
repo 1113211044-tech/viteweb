@@ -1,32 +1,142 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">2026 未來科技論壇</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
-</nav>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026 未來科技論壇 | Future Tech Forum</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">TECH 2026</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#agenda">大會議程</a></li>
+          <li class="nav-item"><a class="nav-link" href="#speakers">重量級講者</a></li>
+          <li class="nav-item"><a class="nav-link" href="#info">活動資訊</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-primary ms-lg-3 text-white" href="#contact">立即報名</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<header class="vh-100 d-flex align-items-center justify-content-center text-center text-white bg-dark">
-  <div data-aos="fade-up">
-    <h1 class="display-1 fw-bold">探索 2026 數位奇點</h1>
-    <p class="lead">引領全球 AI 與量子運算的最前線</p>
-    <a href="#contact" class="btn btn-primary btn-lg mt-3">立即報名</a>
-  </div>
-</header>
+  <header class="hero-section d-flex align-items-center justify-content-center text-center text-white">
+    <div class="container" data-aos="zoom-out" data-aos-duration="1500">
+      <h1 class="display-2 fw-bold mb-3">2026 未來科技論壇</h1>
+      <p class="fs-4 mb-5">解構 AI、量子運算與永續科技的交匯點</p>
+      <a href="#agenda" class="btn btn-outline-light btn-lg px-5 border-2">查看議程</a>
+    </div>
+  </header>
 
-<section class="py-5 bg-light" id="agenda">
-  <div class="container">
-    <h2 class="text-center mb-5" data-aos="zoom-in">大會議程</h2>
-    <div class="row g-4">
-      <div class="col-md-4" data-aos="fade-right">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5>09:00 - 10:30</h5>
-            <h4 class="card-title">AI 生成藝術的未來</h4>
+  <section id="agenda" class="py-5">
+    <div class="container py-5">
+      <h2 class="text-center mb-5 fw-bold" data-aos="fade-up">大會議程</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <span class="badge bg-primary mb-2">09:30 - 11:00</span>
+              <h5 class="card-title fw-bold">主題演講：通用人工智慧的黎明</h5>
+              <p class="card-text text-muted">探討 AGI 在未來五年的社會影響力與技術突破。</p>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="speakers" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold" data-aos="fade-up">重量級講者</h2>
+      <div id="speakerCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
+        <div class="carousel-inner text-center">
+          <div class="carousel-item active py-5">
+            <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="Speaker">
+            <h3>Dr. Sarah Jenkins</h3>
+            <p class="text-muted">OpenAI 首席科學家</p>
+            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#speakerModal">查看介紹</button>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#speakerCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#speakerCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="info" class="py-5">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <h2 class="fw-bold mb-4">活動資訊</h2>
+          <ul class="list-unstyled fs-5">
+            <li class="mb-3">📍 <strong>地點：</strong> 台北國際會議中心 (TICC)</li>
+            <li class="mb-3">🚗 <strong>交通：</strong> 捷運台北 101/世貿站 1 號出口</li>
+            <li class="mb-3">🏨 <strong>住宿：</strong> 憑論壇票根享君悅酒店 8 折優惠</li>
+          </ul>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="ratio ratio-16x9 shadow rounded">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.0131140061266!2d121.5582302!3d25.033611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb6010048db%3A0x633d7f45a27893a7!2z5Y-w5YyX5ZyL6Zqb5pyD6K2w5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1710000000000!5m2!1szh-TW!2stw"></iframe>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5 bg-dark text-white">
+    <div class="container py-5 text-center">
+      <h2 class="mb-4" data-aos="zoom-in">立即報名參與未來</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6" data-aos="fade-up">
+          <form class="text-start">
+            <div class="mb-3">
+              <label class="form-label">姓名</label>
+              <input type="text" class="form-control" placeholder="您的姓名">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">電子信箱</label>
+              <input type="email" class="form-control" placeholder="name@example.com">
+            </div>
+            <button type="submit" class="btn btn-primary w-100 py-2">確認送出</button>
+          </form>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <footer class="py-4 text-center bg-black text-secondary">
+    <p>&copy; 2026 Future Tech Forum. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+
+<div class="modal fade" id="speakerModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered text-dark">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold">講者詳細介紹</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center p-4">
+        <img src="https://via.placeholder.com/120" class="rounded-circle mb-3 shadow" alt="Speaker">
+        <h4>Dr. Sarah Jenkins</h4>
+        <p class="text-primary fw-bold">OpenAI 首席科學家</p>
+        <hr>
+        <p class="text-start">Dr. Jenkins 在生成式 AI 領域擁有超過 15 年經驗，本次將為我們揭秘 2026 年通用人工智慧 (AGI) 的技術架構與倫理邊界。</p>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+      </div>
+    </div>
   </div>
-</section>
+</div>
+
+</body>
+</html>

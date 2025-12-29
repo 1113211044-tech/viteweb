@@ -1,0 +1,37 @@
+// 1. 定義未來感配色
+$primary: #00f2ff;    // 電子藍
+$secondary: #7000ff;  // 螢光紫
+$dark: #0a0a0c;       // 深沉底色
+$light: #e0e0e0;
+
+// 2. 引入 Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// 3. 自定義全域樣式
+body {
+  background-color: $dark;
+  color: $light;
+  font-family: 'Inter', 'Noto Sans TC', sans-serif;
+}
+
+.navbar {
+  background-color: rgba($dark, 0.95) !important;
+  backdrop-filter: blur(10px); // 磨砂玻璃效果
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba($primary, 0.2);
+  color: white;
+  backdrop-filter: blur(5px);
+  
+  &:hover {
+    border-color: $primary;
+    box-shadow: 0 0 20px rgba($primary, 0.4);
+  }
+}
+
+.btn-primary {
+  color: $dark;
+  font-weight: bold;
+}
